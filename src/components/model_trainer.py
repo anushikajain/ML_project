@@ -25,7 +25,7 @@ class ModelTrainerConfig:
 
 class ModelTrainer:
     def __init__(self):
-        self.model_trainer_config=ModelTrainerConfig()
+        self.model_trainer_config = ModelTrainerConfig()
 
     def initiate_model_trainer(self,train_array,test_array):
         try:
@@ -72,8 +72,8 @@ class ModelTrainer:
 
             r2_square = r2_score(y_test, predicted)
             return r2_square
-        
-        
+                                
+                
         except Exception as e:
-            raise CustomeExcwption(e,sys)
+            raise CustomeException(e,sys)
         
